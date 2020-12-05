@@ -101,3 +101,41 @@ nav ul{
     padding: 1rem 2rem;
     border-radius: 2rem;
 }
+
+/* Organizar grid dos elementos */
+.showcase {
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.showcase h2{
+    grid-column: 2/2; /* linha / coluna */
+    align-self: flex-end;
+}
+
+.showcase img{
+    grid-row: 2/3; /* linha / coluna */
+    grid-column: 3/4;
+    height: 120%;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+}
+
+.showcase .info{
+    grid-column: 4/5;
+    grid-row: 3/3;
+    padding-bottom: 3rem;
+}
+
+.features-container {
+    background: #323232;
+}
+
+.features {
+    min-height: 90vh;
+    width: 80%;
+    margin: auto;
+}
