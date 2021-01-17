@@ -132,10 +132,61 @@ nav ul{
 
 .features-container {
     background: #323232;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.features-container .wave {
+    position: absolute;
+    left: 0;
+    bottom: -25%;
+    width: 100%;
+    z-index: -1;
 }
 
 .features {
     min-height: 90vh;
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.features .cards{
+    display: flex;
+    justify-content: space-between;
+    margin: auto; /*margin-top, margin-right, margin-bottom, margin-left.*/
+    color: black;
+}
+
+.features .card{
+    background: white;
+    margin: 0rem 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.features h4 {
+    margin: 3rem 0rem 1rem 0rem;
+}
+
+.features h2 {
+    margin: 0rem 0rem 0rem 5rem;
+}
+
+.features p {
+    padding: 2rem;
+}
+
+.features img {
+    object-fit: cover;
+}
+
+.features-container h2{
+    margin-left: 10rem;
 }
