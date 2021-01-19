@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./styles/style.css">
         <title>Template</title>
     </head>
@@ -34,7 +35,7 @@
             </section>
             <div class="features-container">
                 <h2>Features</h2>
-                <section class="features">
+                <section class="features" data-aos="fade-right" data-aos-duration="3000">
                     <div class="cards">
                         <div class="card">
                             <img src="img/card1 1.png" alt="">
@@ -61,7 +62,7 @@
             </div>
             <section class="soon">
                 <h2>Coming Soon</h2>
-                <img src="./img/camera-soon-v2 1.png" alt="">
+                <img src="./img/camera-soon-v2 1.png" alt="" class="camerasoon">
                 <img src="./img/circle.png" alt="" class="circle">
             </section>
             <footer>
@@ -79,5 +80,9 @@
                 </ul>
             </footer>
         </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
